@@ -1,0 +1,5 @@
+Retrofit.Builder()
+        .baseUrl(BuildConfig.END_POINT)
+        .addConverterFactory(GsonConverterFactory.create())
+        .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) //For RxJava
+        .build();
